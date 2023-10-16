@@ -33,7 +33,7 @@ services:
     ulimits: *elasticsearch-common-ulimits
     environment: *elasticsearch-common-env
     volumes:
-      - data01:/usr/share/elasticsearch/data
+      - data01:/bitnami/elasticsearch/data
     networks:
       - elastic
 
@@ -46,7 +46,7 @@ services:
     ulimits: *elasticsearch-common-ulimits
     environment: *elasticsearch-common-env
     volumes:
-      - data02:/usr/share/elasticsearch/data
+      - data02:/bitnami/elasticsearch/data
     networks:
       - elastic
 
